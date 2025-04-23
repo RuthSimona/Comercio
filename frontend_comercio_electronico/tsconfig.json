@@ -1,0 +1,26 @@
+ {
+  
+  "extends": "@vue/tsconfig/tsconfig.web.json",
+  "include": ["env.d.ts", "src/**/*", "src/**/*.vue", "src/**/*.ts", "src/**/*.d.ts"],
+  
+  "files": [],
+  "compilerOptions": {
+    "lib": ["es2017"],
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "importsNotUsedAsValues": "remove",
+    "verbatimModuleSyntax": false,
+    "ignoreDeprecations": "5.0" 
+  },
+  "references": [
+    {
+      "path": "./tsconfig.config.json"
+    }  
+  ]
+}
+
+
+
